@@ -20,10 +20,12 @@ public class userdetailcontroller {
 	@Autowired
     private userdetailservices service;
 	
-	@PostMapping("/adduser")
-    public user_details adduser(@RequestBody user_details user) {
-        return service.saveuser(user);
-    }
+    // Route needs to be unique... 
+    //
+	//@PostMapping("/adduser")
+    //public user_details adduser(@RequestBody user_details user) {
+    //    return service.saveuser(user);
+    //}
 
     @PostMapping("/adduser")
     public List<user_details> adduser(@RequestBody List<user_details> user) {
@@ -45,10 +47,12 @@ public class userdetailcontroller {
         return service.getuserByName(user_name);
     }
 
-    @PutMapping("/update")
-    public user_details updateuser(@RequestBody user_details user) {
-        return service.updateuser(user);
-    }
+    // Route needs to be unique... 
+    //
+    //@PutMapping("/update")
+    //public user_details updateuser(@RequestBody user_details user) {
+    //    return service.updateuser(user);
+    //}
 
     @DeleteMapping("/delete/{user_id}")
     public String deleteuser(@PathVariable int user_id) {

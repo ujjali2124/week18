@@ -31,7 +31,8 @@ public class productservices {
     }
 
     public product_details getProductByName(String product_name) {
-        return repository.findByName(product_name);
+        //return repository.findByName(product_name);
+        return null;
     }
 
     public String deleteProduct(int product_id) {

@@ -32,7 +32,8 @@ public class categoryservice {
     }
 
     public category getProductByName(String category_name) {
-        return repository.findByName(category_name);
+        //return repository.findBycategory_name(category_name);
+      return null;
     }
 
     public String deleteProduct(int category_id) {

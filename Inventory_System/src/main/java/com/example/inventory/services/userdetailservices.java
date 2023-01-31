@@ -31,7 +31,8 @@ public class userdetailservices {
     }
 
     public user_details getuserByName(String user_name) {
-        return repository.findByName(user_name);
+        //return repository.findByName(user_name);
+        return null;
     }
 
     public String deleteuser(int user_id) {

@@ -6,6 +6,6 @@ import com.example.inventory.entity.category;
 import com.example.inventory.entity.product_details;
 
 public interface CategoryRepository extends JpaRepository<category,Integer>{
-	category findByName(String category_name);
+	//category findBycategory_name(String category_name);
 
 }
