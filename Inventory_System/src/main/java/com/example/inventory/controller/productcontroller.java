@@ -43,10 +43,12 @@ public class productcontroller {
         return service.getProductByName(product_name);
     }
 
-    @PutMapping("/update")
-    public product_details updateProduct(@RequestBody product_details product) {
-        return service.updateProduct(product);
-    }
+    // Route needs to be unique... 
+    //
+    //@PutMapping("/update")
+    //public product_details updateProduct(@RequestBody product_details product) {
+    //    return service.updateProduct(product);
+    //}
 
     @DeleteMapping("/delete/{product_id}")
     public String deleteProduct(@PathVariable int product_id) {

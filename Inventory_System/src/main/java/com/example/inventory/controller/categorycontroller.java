@@ -27,10 +27,10 @@ public class categorycontroller {
         return service.saveProduct(product);
     }
 
-    @PostMapping("/addCategory")
-    public List<category> addProducts(@RequestBody List<category> products) {
-        return service.saveProducts(products);
-    }
+    //@PostMapping("/addCategory")
+    //public List<category> addProducts(@RequestBody List<category> products) {
+    //    return service.saveProducts(products);
+    //}
 
     @GetMapping("/Category")
     public List<category> findAllProducts() {

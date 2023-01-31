@@ -21,16 +21,19 @@ public class productcategorycontroller {
 	@Autowired
     private productcategoryservices service;
 	
-	
-    @GetMapping("/products")
-    public List<product_category> findAllProducts() {
-        return service.getProducts();
-    }
+    // Route needs to be unique... 
+    //
+    //@GetMapping("/products")
+    //public List<product_category> findAllProducts() {
+    //    return service.getProducts();
+    //}
 
-    @GetMapping("/productById/{product_id}")
-    public product_category findProductById(@PathVariable int product_id) {
-        return service.getProductById(product_id);
-    }
+    // Route needs to be unique... 
+    //
+    //@GetMapping("/productById/{product_id}")
+    //public product_category findProductById(@PathVariable int product_id) {
+    //    return service.getProductById(product_id);
+    //}
 
 
 }
